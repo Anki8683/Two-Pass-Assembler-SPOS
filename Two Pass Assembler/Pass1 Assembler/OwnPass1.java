@@ -25,10 +25,8 @@ public class OwnPass1 {
     public static void main(String args[]) {
         OwnPass1 oPass1 = new OwnPass1();
         try {
-
-            oPass1.parseFile();
-
-        } catch (Exception e) {
+             oPass1.parseFile();
+         }catch (Exception e) {
             System.out.println("Error: " + e);
         }
     }
@@ -65,7 +63,6 @@ public class OwnPass1 {
                             break;
                         }
                     }
-
                 }
                 if (parts[1].equals("DC")) {
                     int constant = Integer.parseInt(parts[2].replace("'", ""));
