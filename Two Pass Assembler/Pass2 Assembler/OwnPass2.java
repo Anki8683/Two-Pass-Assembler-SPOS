@@ -14,7 +14,6 @@ class obj {
         this.name = nm;
         this.addr = address;
     }
-
 }
 
 public class OwnPass2 {
@@ -99,7 +98,6 @@ public class OwnPass2 {
 
                         code = "00\t0\t000" + "\n";
                         bw.write(parts[0] + "\t\t" + code);
-
                     }
                 }
             }
@@ -110,7 +108,6 @@ public class OwnPass2 {
                 {
                     int regOp = Integer.parseInt(parts[2].replaceAll("[^0-9]", ""));
                     code = String.format("%02d", opcode) + "\t" + String.format("%01d", regOp)+"\t";
-                        
                 }
                     if (parts[3].contains("S")) {
                         int symIndex = Integer.parseInt(parts[3].replaceAll("[^0-9]", ""));
