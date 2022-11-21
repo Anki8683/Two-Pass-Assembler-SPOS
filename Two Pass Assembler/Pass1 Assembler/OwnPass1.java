@@ -50,7 +50,7 @@ public class OwnPass1 {
                 }
             }
 
-            if (parts[0] != "") {
+            if (!parts[0].trim().isEmpty()) {
                 code = "";
                 for (int j = 0; j < total_symb; j++) {
                     if (symb_table[j].addr != 0)
@@ -143,7 +143,7 @@ if (parts[1].equalsIgnoreCase("STOP")) {
 
             if (Arrays.asList(IS).contains(parts[1])) {
                 int i = Arrays.asList(IS).indexOf(parts[1]);
-                if (parts[0] == "") {
+                if (parts[0].trim().isEmpty()) {
                     lc++;
                 }
                 code = lc + "\t(IS,0" + (i + 1) + ")\t";
